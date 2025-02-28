@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <!-- CardView for View Items -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view_items_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/view_items_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Items"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for View Bids -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view_bids_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/view_items_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/view_bids_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Bids"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for View Notice -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view_notice_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/view_bids_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/view_notice_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Notice"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Register Items -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/register_items_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/view_notice_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/register_items_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Items"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Withdraw Items -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/withdraw_items_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/register_items_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/withdraw_items_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Withdraw Items"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Transfer Items -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/transfer_items_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/withdraw_items_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/transfer_items_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer Items"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

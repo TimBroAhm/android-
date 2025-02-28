@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Inventory Managment System EMA</string>
+    <string name="bamlack"> bamlack</string>
+
+    <string-array name="roles_array">
+        <item>-Select Role-</item>
+        <item>System Admin</item>
+        <item>Director General</item>
+        <item>Deputy Director General</item>
+        <item>General Service Executive Officer</item>
+        <item>Employee</item>
+        <item>Stockclerk</item>
+    </string-array>
+
+</resources>

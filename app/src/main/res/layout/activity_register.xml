@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the Register Page"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        />
+
+        <!-- First Name -->
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <!-- Father's Name -->
+        <EditText
+            android:id="@+id/etFatherName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Middle Name"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <!-- Last Name -->
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <!-- Sex -->
+        <RadioGroup
+            android:id="@+id/rgSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <!-- Date of Birth -->
+        <EditText
+            android:id="@+id/etDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:inputType="none"
+            android:focusable="false"
+            android:padding="10dp" />
+
+        <!-- Phone Number -->
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:padding="10dp" />
+
+        <!-- Kebele -->
+        <EditText
+            android:id="@+id/etKebele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kebele"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <!-- Qualification -->
+        <EditText
+            android:id="@+id/etQualification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Qualification"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <!-- Role Spinner -->
+        <Spinner
+            android:id="@+id/spinnerRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="onReg"
+            android:padding="10dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

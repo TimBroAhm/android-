@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+<!-- -->
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Ethiopian Maritime Authority "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="10dp"/>
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Username Input -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="16dp"
+        android:background="@drawable/edittext_backgroun"
+        android:layout_marginTop="10dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"/>
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:background="@drawable/edittext_backgroun"
+        android:layout_marginTop="16dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:onClick="onLogin"
+        android:backgroundTint="#2196F3"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/button_background"/>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:onClick="onReg"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/button_background"/>
+
+</LinearLayout>
