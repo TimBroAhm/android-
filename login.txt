@@ -1,0 +1,23 @@
+<?php
+   $con=mysqli_connect("example.com","username","password");
+   $sql="CREATE DATABASE my_db";
+   if (mysqli_query($con,$sql)) {
+      echo "Database my_db created successfully";
+   }
+?>
+
+<?php
+   $con=mysqli_connect("example.com","username","password","my_db");
+   $sql="CREATE TABLE table1(Username CHAR(30),Password CHAR(30),Role CHAR(30))";
+   if (mysqli_query($con,$sql)) {
+      echo "Table have been created successfully";
+   }
+?>
+
+<?php
+   $con=mysqli_connect("example.com","username","password","my_db");
+   $sql="INSERT INTO table1 (FirstName, LastName, Age) VALUES ('admin', 'admin','adminstrator')";
+   if (mysqli_query($con,$sql)) {
+      echo "Values have been inserted successfully";
+   }
+?>
